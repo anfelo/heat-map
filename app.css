@@ -1,0 +1,80 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #51b46d;
+}
+
+.chart-wrapper {
+  width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.chart {
+  margin: auto;
+}
+
+.bar {
+  cursor: pointer;
+}
+ 
+.axis text {
+  font: 12px 'Roboto', sans-serif;
+} 
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+div.tooltip {	
+  position: absolute;			
+  text-align: center;				
+  padding: 8px;				
+  font: 12px sans-serif;		
+  background: rgba(0, 0, 0, 0.7);	
+  border: 0px;		
+  border-radius: 5px;			
+  pointer-events: none;		
+  color: white;	
+}
+
+div.tooltip::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent; 
+  border-right:10px solid rgba(0, 0, 0, 0.7); 
+}
+
+div.tooltip h3,
+div.tooltip p {
+  margin: 5px 0;
+}
+
+.chart-title {
+  font-size: 30px;
+  fill: #444;
+  font-weight: bold;
+}
+
+.chart-title-subheading {
+  font-size: 20px;
+  fill: #666;
+}
+
+.caption {
+  width: 900px;
+  font-size: 13px;
+  margin: 0 30px;
+  color: #637a91;
+}
